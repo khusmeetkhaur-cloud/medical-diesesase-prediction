@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Disease Prediction System</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#eef8ff;color:#172033;}header{background:#1f4e79;color:white;padding:22px;text-align:center;}
+.hero{width:88%;margin:35px auto;display:flex;align-items:center;justify-content:space-between;gap:35px;background:white;border-radius:20px;padding:35px;box-shadow:0 10px 25px rgba(0,0,0,0.12);}.hero-text{max-width:560px;}.hero-text h2{font-size:34px;margin-bottom:10px;color:#1f4e79;}.hero-text p{font-size:17px;line-height:1.6;}.hero img{width:380px;max-width:100%;border-radius:18px;}.buttonGroup{display:flex;gap:18px;margin-top:22px;flex-wrap:wrap;}.buttonGroup button{font-size:16px;padding:12px 22px;border-radius:8px;border:none;background:#1f4e79;color:white;cursor:pointer;}.buttonGroup button:hover{background:#00a6a6;}.features{width:88%;margin:25px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}.card{background:white;padding:20px;border-radius:15px;text-align:center;box-shadow:0 8px 18px rgba(0,0,0,0.1);}.card img{width:120px;height:100px;object-fit:contain;}footer{background:#1f4e79;color:white;text-align:center;padding:12px;margin-top:30px;}@media(max-width:900px){.hero{flex-direction:column;text-align:center}.features{grid-template-columns:1fr}.buttonGroup{justify-content:center}}
+</style></head>
+<body><header><h1>Medical Disease Prediction System</h1></header>
+<section class="hero"><div class="hero-text"><h2>Predict Disease Using Machine Learning</h2><p>This web application predicts possible disease category based on patient health details such as age, BMI, blood pressure, glucose level, cholesterol and lifestyle factors.</p><div class="buttonGroup"><a href="/project"><button>Predict Disease</button></a><a href="/about"><button>About Project</button></a><a href="/contact"><button>Contact</button></a></div></div><img src="{{ url_for('static', filename='doctor_ai.png') }}" alt="Doctor AI Image"></section>
+<section class="features"><div class="card"><img src="{{ url_for('static', filename='blood_test.png') }}"><h3>Health Data</h3><p>Uses patient medical values for prediction.</p></div><div class="card"><img src="{{ url_for('static', filename='heart_health.png') }}"><h3>Heart Health</h3><p>Blood pressure and heart rate are important features.</p></div><div class="card"><img src="{{ url_for('static', filename='ai_diagnosis.png') }}"><h3>ML Based</h3><p>Trained model gives instant prediction result.</p></div></section>
+<footer><p>&copy; 2026 Medical Disease Prediction System. All Rights Reserved.</p></footer></body></html>
